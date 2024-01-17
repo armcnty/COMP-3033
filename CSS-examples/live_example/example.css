@@ -1,0 +1,35 @@
+.main_style {
+	background-color: blue;
+	color: white;
+	/*padding: 20px;*/
+}
+.header {
+	border: solid red 2px;
+	background-color: red;
+	color: blue;
+	text-align: center;
+}
+.menu {
+	background-color: black;
+	width: 100%;
+}
+.menu {
+	background-color: black;
+	width: 100%;
+}
+.menu_item {
+	display: inline;
+}
+.menu_item:hover {
+	background-color: yellow;
+}
+.content {
+	min-height: 250px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.footer {
+	background-color: black;
+	text-align: center;
+	padding: 20px;
+}

@@ -1,0 +1,34 @@
+
+/* this applies to the whole page */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12pt;
+    background-color: lightblue;
+}
+
+/* this is a style class name */
+.first_paragraph {
+    font-size: 10pt;
+    color: lightblue;
+}
+
+/* this style is applied to any element that has an id attribute of "second_paragraph" */
+#second_paragraph {
+    font-size: 14pt;
+    color: lightblue;
+}
+
+/* an element inside another element */
+div > p {
+    color: lightblue;
+}
+
+/* multiple class names */
+.third_paragraph, .fourth_paragraph {
+    color: lightblue;
+}
+
+/* more specific styles applied to a class */
+.fourth_paragraph {
+    font-size: 18pt;
+}

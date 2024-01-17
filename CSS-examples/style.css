@@ -1,0 +1,17 @@
+/* StyleSheet for page17.html */
+body {
+	font-family: arial;
+	background-color: #7188b6;
+}
+h1 {
+	text-align: center;
+}
+h2 {
+	text-transform: uppercase;
+	text-align: center;
+	color: purple;
+	font-weight: bold;
+}
+p {
+	text-transform: uppercase;
+}

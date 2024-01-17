@@ -1,0 +1,33 @@
+body {
+	font-family: Arial;
+	margin: 20px;
+}
+
+.header, .footer {
+	width: 100%;
+	background-color: red;
+	padding: 10px;
+	color: white;
+}
+
+.header_secondary {
+	color: blue;
+}
+
+.content p {
+	color: blue;
+	font-size: 14pt;
+}
+.content li {
+	color: blue;
+	font-size: 14pt;
+	margin: 10px;
+	list-style-type: square;
+}
+.picture img {
+	width: 200px;
+}
+.links a {
+	font-size: 16pt;
+	font-weight: bold;
+}

@@ -1,0 +1,26 @@
+
+body {
+    font-family: Arial;
+    width: 80%;
+    margin: auto;
+}
+
+.darkmode {
+    background-color: black;
+    color: white;
+}
+
+.subtitle {
+    font-size: 0.8em;
+    color: gray;
+    font-weight: bold;
+}
+
+h1 {
+    color: red;
+}
+
+.copyright {
+    font-size: 0.5em;
+    font-weight: lighter;
+}

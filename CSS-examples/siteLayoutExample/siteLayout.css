@@ -1,0 +1,35 @@
+body {
+	font-family: arial;
+	width: 50%;
+	margin: 20px auto;
+}
+.header {
+	border: solid red 1px;
+	padding: 10px;
+	font-color: purple;
+	font-size: 26pt;
+}
+.menu {
+	border: solid green 1px;
+	font-weight: bold;
+	height: 25px;
+	padding: 4px;
+}
+.menu_item {
+	border: dotted purple 1px;
+	width: 20%;
+	float: left;
+	margin: 4px;
+}
+.content {
+	border: solid green 1px;
+	color: gray;
+	font-size: 14pt;
+	padding: 10px;
+}
+.footer {
+	border: solid red 1px;
+	font-size: 10pt;
+	font-weight: italic;
+	padding: 10px;
+}
