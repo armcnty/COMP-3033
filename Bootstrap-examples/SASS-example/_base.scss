@@ -1,0 +1,12 @@
+// _base.scss
+// Variables
+$primary-color: #3453db;
+$secondary-color: #cc2eac;
+$font-stack: 'Helvetica Neue', sans-serif;
+
+$nscc-color: blue;
+
+// Mixin for text shadow
+@mixin text-shadow($x-offset, $y-offset, $blur, $color) {
+  text-shadow: $x-offset $y-offset $blur $color;
+}
