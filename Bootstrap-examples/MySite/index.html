@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <!-- Note use of Subresource Integrity attribute -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="img/andy.jpeg" alt="me!" width="80"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#Research">Research</a>
+                <a class="nav-link" href="#Teaching">Teaching</a>
+                <a class="nav-link" href="#Personal">Personal</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container">
+        <h1 class="text-center p-5 mb-5 mt-5">Welcome to my personal webpage!</h1>
+        <div class="w-80 bg-dark-subtle m-5 p-5">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, iure nulla necessitatibus assumenda reprehenderit distinctio molestiae ab, ipsam natus cumque aperiam facilis dolor officia aliquam tempora eum nostrum aut iusto optio corrupti, voluptatibus ducimus earum sint quod? Commodi velit tenetur repellendus temporibus aspernatur? Totam assumenda labore vel adipisci consectetur neque voluptates fuga? Modi veritatis quos deserunt voluptatem placeat numquam quaerat! Magnam fuga quam quas, commodi suscipit explicabo aliquid omnis quidem quis debitis corporis laboriosam dolorem impedit tempora dicta, labore sunt autem placeat soluta dolorum, illo porro vero in! Veritatis molestiae mollitia libero ducimus illo vero hic nostrum! Dolores, doloremque sunt.</p>
+            <button type="button" class="btn btn-primary btn-lg">Learn more</button>
+            <button type="button" class="btn btn-secondary btn-lg">Second button</button>
+        </div>
+
+         <!-- Research Section -->
+        <h2 id="Research" class="fs-1 p-5 m-5 mb-5 text-center">RESEARCH INTERESTS</h2>
+        <div class="row">
+            <!-- Card #1 -->
+            <div class="col">
+                <div class="card">
+                    <img src="img/ml.png" class="card-img-top" alt="Machine Learning logo">
+                    <div class="card-body">
+                    <h5 class="card-title">Machine Learning</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nesciunt soluta minima, suscipit aspernatur reiciendis aperiam repudiandae molestias illo, inventore porro laudantium assumenda, tempore enim nihil? Magni deserunt nulla deleniti?</p>
+                    <a href="#" class="btn btn-primary">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card #2 -->
+            <div class="col">
+                <div class="card">
+                    <img src="img/gp.png" class="card-img-top" alt="Genetic Programming logo">
+                    <div class="card-body">
+                    <h5 class="card-title">Evolutionary Computation</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nesciunt soluta minima, suscipit aspernatur reiciendis aperiam repudiandae molestias illo, inventore porro laudantium assumenda, tempore enim nihil? Magni deserunt nulla deleniti?</p>
+                    <a href="#" class="btn btn-primary">Read more</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card #3 -->
+            <div class="col">
+                <div class="card">
+                    <img src="img/ip.png" class="card-img-top" alt="Image Processing logo">
+                    <div class="card-body">
+                    <h5 class="card-title">Image Processing</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde nesciunt soluta minima, suscipit aspernatur reiciendis aperiam repudiandae molestias illo, inventore porro laudantium assumenda, tempore enim nihil? Magni deserunt nulla deleniti?</p>
+                    <a href="#" class="btn btn-primary">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Teaching Section -->
+        <h2 id="Teaching" class="fs-1 p-5 m-5 mb-5 text-center">MY TEACHING</h2>
+        <div class="row">
+            <div class="col-6">
+                <div class="bg-secondary text-white p-5 m-5 text-center">
+                    <h2>COMP-3033</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas natus placeat totam quibusdam recusandae rerum modi eius autem accusantium aperiam deserunt repellat, delectus nobis itaque ad officia saepe sunt hic!</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="bg-dark-subtle p-5 m-5 text-center">
+                    <h2>COMP-Another-one</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas natus placeat totam quibusdam recusandae rerum modi eius autem accusantium aperiam deserunt repellat, delectus nobis itaque ad officia saepe sunt hic!</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="bg-dark-subtle p-5 m-5 text-center">
+                    <h2>COMP-Another-two</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas natus placeat totam quibusdam recusandae rerum modi eius autem accusantium aperiam deserunt repellat, delectus nobis itaque ad officia saepe sunt hic!</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="bg-secondary text-white p-5 m-5 text-center">
+                    <h2>COMP-Another-three</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas natus placeat totam quibusdam recusandae rerum modi eius autem accusantium aperiam deserunt repellat, delectus nobis itaque ad officia saepe sunt hic!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Personal Section -->
+        <h2 id="Personal" class="fs-1 p-5 m-5 mb-5 text-center">MY PERSONAL STUFF</h2>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/pic1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/pic2.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="img/pic3.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+        <div class="w-80 bg-dark-subtle m-5 p-5">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias asperiores, sint dolorum corporis debitis saepe porro placeat id illum iusto explicabo ullam harum veniam atque beatae? Reprehenderit nobis repudiandae ipsum?</p>
+            <a class="btn btn-primary btn-lg" href="mailto:andrew.mcintyre@acadiau.ca"><i class="fa-regular fa-envelope"></i>&nbsp;Contact Me</a>
+        </div>
+    </div> <!-- End of Main container-->
+
+    <footer class="bg-dark p-5 text-white text-center">   
+        <p>&copy; Andrew R. McIntyre 2024</p>
+        <!-- <p><i class="fa-regular fa-envelope"></i>&nbsp;<a href="mailto:andrew.mcintyre@acadiau.ca" class="text-white text-decoration-none">Email</a></p> -->
+    </footer>
+    <script src="https://kit.fontawesome.com/d1f570afdf.js" crossorigin="anonymous"></script>
+  </body>
+</html>
