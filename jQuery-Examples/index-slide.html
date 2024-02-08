@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SlideUp demo</title>
+  <style>
+  div {
+    background: #3d9a44;
+    color: rgb(255, 255, 255);
+    margin: 3px;
+    width: 80px;
+    height: 40px;
+    float: left;
+  }
+  p {
+    background: yellow;
+    width: 10%;
+    border: 1px solid #000;
+    border-radius: 10px;
+    text-align: center;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+<body>
+ 
+<p>Click me!</p>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+ 
+<script>
+$( "p" ).on( "click", function() {
+  // checks visitbility status of the first div box
+  if ( $( "div" ).first().is( ":hidden" ) ) {
+    $( "div" ).show();
+  } else {
+    $( "div" ).slideUp("slow");
+  }
+} );
+</script>
+ 
+</body>
+</html>

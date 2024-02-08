@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>on demo</title>
+<style>
+    p {
+    color: red;
+    margin: 5px;
+    cursor: pointer;
+    }
+    p:hover {
+    background: yellow;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+
+<body>
+  <div id="target">
+    Click here
+  </div>
+  <div id="other">
+    Trigger the handler
+  </div>
+
+  <script>
+    function myfunction() {
+      alert( "Handler for target `click` called." );
+    }
+
+    // Set a handler for target's click trigger
+    $( "#target" ).on( "click", function() {
+      myfunction() // Event handler function 
+    } );
+
+    // Trigger target's click event
+    $( "#other" ).on( "click", function() {
+      $( "#target" ).trigger( "click" );
+    } );
+  </script>
+
+</body>
+</html>
+

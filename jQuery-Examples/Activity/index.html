@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>AXAJ with jQuery demo</title>
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    </head>
+
+    <body>
+        <!-- ask the user for input -->
+        <p>Enter a town in NS to see a list of restaurants:</p>
+        <input type="text" id="facility_town"/>
+        <button id="getdata_btn">Go!</button>
+        <div id="results_container">
+            <!-- output will go here -->
+        </div>
+    </body>
+
+    <script> 
+
+        /*
+            This bit of JavaScript will set up and execute an AJAX
+            call using jQuery.  The endpoint URL is: 
+            https://dev.socrata.com/foundry/data.novascotia.ca/2shh-dv8p
+        */
+        function getUrl(){
+            let facility_town = $("#facility_town").val();
+            console.log("myfunction event handler running!");
+            // The URL to the API endpoint, note the trailing ?
+            let url = "https://data.novascotia.ca/resource/2shh-dv8p.json?"; 
+                url += "facility_town=" + facility_town.toUpperCase();
+            console.log(url);
+            return(url);
+        }
+
+        function getDataFromAPI(url) {
+            $.get(url, function(data, status) {
+                console.log(data, status);
+                // iterate over the array of results and generate some crude HTML to contain it
+                let htmlString = "<p>" + data.length + " results found.</p>";
+                htmlString += "<ul>";
+                for( let i = 0; i < data.length; i++ ) {
+                    htmlString += "<li>" + data[i].facility + " (" + data[i].facility_address + ")</li>";
+                }
+                htmlString += "</ul>";
+                console.log("The HTML string is ready to be displayed");
+                console.log(htmlString);
+                // Modify DOM results_container to contain the htmlString
+                $("#results_container").html(htmlString);
+                console.log("Update complete!");     
+            })
+        }
+
+        // Set a handler for button's click event
+        $( "#getdata_btn" ).on( "click", function() {
+            console.log("The Go button was clicked!");
+            let url = getUrl(); // Event handler function
+            getDataFromAPI(url);
+        } );
+
+    
+    </script>
+</html>

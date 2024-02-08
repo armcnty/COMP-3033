@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>jQuery - DOM manipulation Example</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    </head>
+
+    <script>
+        // $('.box-content').html("Welcome to Comp-3033!");
+        $(document).ready(function() {
+            // Everything in here happens after the page has been loaded.
+            console.log("The page content is loaded.");
+            $('.box-content').html("Welcome to Comp-3033!");
+            $('#para-content').html("A new paragraph, thanks to DOM manipulation by jQuery.");
+        });
+    </script>
+    
+    <body>
+        <div class="box-content">Hello World!</div>
+        <p id="para-content">My first paragraph</p>
+        <p>My second paragraph</p>
+    </body>
+</html>
