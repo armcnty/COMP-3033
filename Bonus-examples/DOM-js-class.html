@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  border: 1px solid black;
+  padding:  15px;
+}
+#example {
+  background-color: yellow;
+}
+</style>
+</head>
+
+<body>
+
+<h1>The Document Object manipulation with JavaScript</h1>
+<h2>The getElementsByClassName() Method</h2>
+
+<p>Change the background color of elements having class vs. id attributes "example" and "color":</p>
+
+<div>
+  <p id="example" style="background-color: aqua;">This is paragraph #1.</p>
+</div>
+<br>
+<div class="example">
+  <p>This is paragraph #2.</p>
+</div>
+<br>
+<div class="example color">
+  <p>This is a paragraph #3.</p>
+</div>
+
+<script>
+const collection = document.getElementsByClassName("example");
+for( i = 0; i < collection.length; i++ ) {
+  collection[i].style.backgroundColor = "#335599";
+  collection[i].style.color = "white";
+}
+
+const myid = document.getElementById("example");
+//myid.style.backgroundColor = "red"
+</script>
+
+</body>
+</html>

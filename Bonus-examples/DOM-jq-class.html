@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  border: 1px solid black;
+  padding:  15px;
+}
+#example {
+  background-color: yellow;
+}
+</style>
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+</head>
+
+<body>
+
+<h1>DOM (style) manipulation with jQuery vs. pure javascript.</h1>
+<h2>jQuery's css() and html() Methods</h2>
+
+<p>Change the background color of elements having class vs. id attributes "example" and "color":</p>
+<p>We can also do this directly with inline css using the style attribute.</p>
+<div>
+  <p id="example" style="background-color: aqua;">This is paragraph #1.</p>
+</div>
+<br>
+<div class="example">
+  <p>This is paragraph #2.</p>
+</div>
+<br>
+<div class="example color">
+  <p>This is a paragraph #3.</p>
+</div>
+
+<script>
+const collection = document.getElementsByClassName("example");
+for( i = 0; i < collection.length; i++ ) {
+  collection[i].style.backgroundColor = "#335599";
+  collection[i].style.color = "white";
+}
+
+const myid = document.getElementById("example");
+//myid.style.backgroundColor = "red"
+</script>
+
+
+<!-- Look at how to modify DOM elements with jQuery -->
+<script>
+//  $( "#example" ).css("background-color", "red");
+//  $( "#example ").html("jQuery works!");
+</script>
+
+</body>
+</html>
