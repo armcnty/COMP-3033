@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "mongodb": "^6.4.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^3.1.0"
+  },
+  "name": "hello_server",
+  "version": "1.0.0",
+  "description": "A quick intro to Node and the server functionality ",
+  "main": "myfirst.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "dev": "nodemon myfirst.js"
+  },
+  "keywords": [
+    "Hello",
+    "World"
+  ],
+  "author": "COMP-3033",
+  "license": "ISC"
+}
