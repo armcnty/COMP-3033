@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "mongodb": "6.5"
+  },
+  "name": "mongodb-examples",
+  "version": "1.0.0",
+  "type":"module",
+  "main": "find.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
