@@ -27,15 +27,13 @@ export default {
   },
 
   // Fetches posts when the component is created.
-  created() {
-    axios.get(`http://localhost:3000/contact`)
-    .then(response => {
-      // JSON responses are automatically parsed.
+  async created() {
+    try {
+      const response = await axios.get(`http://localhost:3000/contact`)
       this.posts = response.data
-    })
-    .catch(e => {
+    } catch (e) {
       this.errors.push(e)
-    })
+    }
   }
 }
 </script>
