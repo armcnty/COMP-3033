@@ -83,7 +83,7 @@ app.delete('/contact/:id', async(req, res) =>{
 })
 
 mongoose.set("strictQuery", false)
-mongoose.connect('mongodb+srv://armcintyre:ay16FYP0DcfiusfM@cluster0.mo54j1s.mongodb.net/Node-API?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://<user>:<password>@cluster0.mo54j1s.mongodb.net/Node-API?retryWrites=true&w=majority')
 .then(() => {
     console.log('connected to MongoDB Atlas')
     app.listen(3000, ()=> {
